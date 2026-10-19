@@ -16,3 +16,7 @@ goblin.ShowSheet();
 
 Console.WriteLine($"Tamsin swings at the goblin:  {tamsin.AttackBonus:+0;-0;+0} to hit, against AC {goblin.ArmorClass}.");
 Console.WriteLine($"The goblin swings back:  {goblin.AttackBonus:+0;-0;+0} to hit, against AC {tamsin.ArmorClass}.");
+
+var rng = new Random(42);
+Console.WriteLine(Dice.D20.Roll(rng, DiceRollStrategies.Default));
+Console.WriteLine(Dice.D20.Roll(rng, DiceRollStrategies.Advantage));
