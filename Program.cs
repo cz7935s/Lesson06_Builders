@@ -31,7 +31,8 @@ PlayerBuilder.FromName("Lucky")
      * Step 5's last line -- AbilityScore.Roll skips the 3-to-18 check. Whose job is that check now?
        Which character would you rather play -- Hardcore or Lucky? There's no right answer, but think about what you'd lose by always playing Lucky.
        The call that builds a strength of 1 -- can you write a WithAbilities call that would produce a score of 1?
+       *
     */
     
-    PlayerBuilder.FromName("whatever").WithAbilities(rng, Dice.D6, Default).Build().ShowSheet();
+    PlayerBuilder.FromName("hi").WithAbilities(rng, Dice.D6, Default).Build().ShowSheet();
 
