@@ -55,6 +55,12 @@ public record PlayerBuilder
     
     public PlayerBuilder WithAbilities(Random rng) => this with 
         { _abilities = AbilityScore.Roll(rng, Dice.D6 with {Count = 3}, Default)};
+
+
+    public PlayerBuilder WithAbilities(Random rng, Dice dice, DiceRollStrategy strategy) => this with
+    {
+        _abilities = AbilityScore.Roll(rng, dice, strategy)
+    };
     
     /// <summary>
     /// Puts the player together from whatever parts have been set.
