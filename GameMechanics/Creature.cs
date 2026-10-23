@@ -29,6 +29,9 @@ public record Creature
         ExperienceReward = experienceReward;
     }
 
+    internal static Creature Create(string name, HealthPoints healthPoints,
+        AbilityScore abilities, int experienceReward) => new(name, healthPoints, abilities, experienceReward);
+    
     /// <summary>
     /// Builds a creature, or refuses to.  Every creature in the program comes
     /// through here.

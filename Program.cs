@@ -12,7 +12,7 @@ var bree = StockPlayers.Bree;
 var tamsin = StockPlayers.Tamsin;
 
 // What they're up against.
-var goblin = Creature.Create("Goblin", 7, 7, 8, 14, 10, 10, 8, 8, 50);
+var goblin = StockCreatures.Goblin;
 
 bree.ShowSheet();
 tamsin.ShowSheet();
